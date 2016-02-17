@@ -5,12 +5,17 @@ unit db_connection_int;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, ZDbcIntfs;
 
 type
-  IDbConnection = interface ['{733F3A46-F6E7-4AB1-B4FF-0739FB7D76BC}']
+
+  { IDbConnection }
+
+  IDbConnection = interface ['{209F01C7-5364-4C84-9343-045C91CBFA77}']
+  function ZDbConnection: IZConnection;
   end;
 
 implementation
 
 end.
+

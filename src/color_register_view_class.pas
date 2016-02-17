@@ -21,7 +21,7 @@ type
 implementation
 
 uses
-  color_save_class, color_class, ZDbcIntfs, color_model_class;
+  color_save_class, color_class, color_model_class, db_connection_class;
 
 { TColorRegisterView }
 
@@ -36,8 +36,8 @@ var
   Name: string;
 begin
   WriteLn('Color register:');
-  Answer:='N';
-  while (Answer='N') do
+  Answer:='S';
+  while (Answer='S') do
   begin
     Writeln('Do you want to register a color (Y/N)');
     ReadLn(Answer);
@@ -56,17 +56,14 @@ procedure TColorRegisterView.Save(const AColor: IColor);
 begin
   Writeln(
     TColorSave.New(
-      DriverManager.GetConnection(
-        'postgresql://color_register_user:masterkey@localhost/color_register'
-      )
+      DbConnection.ZDbConnection
     ).Execute(
       TColorModel.New(
         AColor
       )
     ).Message
   );
-//  AConnection.Database:=';
-//  Writeln(TColorSave.New().Execute(AColor).Message);
+  ReadLn;
 end;
 
 end.
