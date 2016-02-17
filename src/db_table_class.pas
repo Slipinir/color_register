@@ -1,6 +1,6 @@
 unit db_table_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -16,7 +16,7 @@ type
   private
     FName: string;
     FFieldList: IDbFieldList;
-  published
+  public
     constructor Create;
     function Name: string;
     function FieldList: IDbFieldList;

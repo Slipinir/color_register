@@ -1,6 +1,6 @@
 unit db_connection_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -22,7 +22,7 @@ type
   TDbConnection = class (TInterfacedObject, IDbConnection)
   private
     FZConnection: IZConnection;
-  published
+  public
     constructor Create;
     function ZDbConnection: IZConnection;
   end;

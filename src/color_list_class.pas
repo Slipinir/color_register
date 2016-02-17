@@ -1,6 +1,6 @@
 unit color_list_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -14,7 +14,7 @@ type
   TColorList = class (TInterfacedPersistent, IColorList)
   private
     FList: array of IColor;
-  published
+  public
     class function New(Colors: array of IColor): IColorList;
     function Add(AColor: IColor): Integer;
     function Count: Integer;

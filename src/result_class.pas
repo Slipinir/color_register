@@ -1,6 +1,6 @@
 unit result_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -15,7 +15,7 @@ type
   private
     FStatus: TResultStatus;
     FMessage: string;
-  published
+  public
     constructor Create(const AStatus: TResultStatus; const AMessage: string);
     function Status: TResultStatus;
     function Message: string;

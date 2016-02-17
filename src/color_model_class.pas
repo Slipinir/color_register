@@ -1,6 +1,6 @@
 unit color_model_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -15,7 +15,7 @@ type
   private
     FId: Integer;
     FColor: IColor;
-  published
+  public
     constructor Create(AColor: IColor; AnId: Integer = 0);
     class function New(AColor: IColor; AnId: Integer = 0): IColorModel;
     function Id: Integer;

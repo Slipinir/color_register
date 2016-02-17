@@ -1,6 +1,6 @@
 unit color_dao_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -18,7 +18,7 @@ type
     FConnection: TZConnection;
     FQuery: TZQuery;
     FTable: IDbTable;
-  published
+  public
     constructor Create(const AConnection: IZConnection; const ATable: IDbTable);
     function Save(const AColor: IColor): IResult;
   end;

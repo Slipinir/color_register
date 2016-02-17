@@ -1,6 +1,6 @@
 unit db_field_list_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -14,12 +14,12 @@ type
   TDbFieldList = class (TInterfacedPersistent, IDbFieldList)
   private
     FList: array of IDbField;
-  published
+  public
     class function New(Fields: array of IDbField): IDbFieldList;
     function Add(AColor: IDbField): Integer;
     function Count: Integer;
     function Get(Index: Integer): IDbField;
-    procedure Assign(Source: IDbFieldList);
+    procedure Assign(Source: IDbFieldList); reintroduce;
     procedure Put(Index: Integer; AValue: IDbField);
   end;
 
@@ -31,6 +31,7 @@ class function TDbFieldList.New(Fields: array of IDbField): IDbFieldList;
 var
   I: Integer;
 begin
+  Result:=TDbFieldList.Create;
   for I:=Low(Fields) to High(Fields) do
     Result.Add(Fields[I]);
 end;

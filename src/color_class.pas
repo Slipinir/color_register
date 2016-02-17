@@ -1,6 +1,6 @@
 unit color_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -16,7 +16,7 @@ type
     FName: string;
     function GetName: string;
     procedure SetName(AValue: string);
-  published
+  public
     constructor Create(AName: string);
     property Name: string read GetName write SetName;
   end;

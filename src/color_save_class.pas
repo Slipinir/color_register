@@ -1,6 +1,6 @@
 unit color_save_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -18,7 +18,7 @@ type
     function Update(const AColor: IColorModel): IResult;
     function Insert(const AColor: IColor): IResult;
     function RaisedException(const AnException: Exception; const AColor: IColor): string;
-  published
+  public
     constructor Create(AConnection: IZConnection);
     class function New(AConnection: IZConnection): IColorSave;
     function Execute(AColor: IColorModel): IResult;

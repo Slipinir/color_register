@@ -1,6 +1,6 @@
 unit color_list_int;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 

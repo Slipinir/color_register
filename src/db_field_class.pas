@@ -1,6 +1,6 @@
 unit db_field_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -16,7 +16,7 @@ type
     FName: string;
     FIsPrimaryKey: Boolean;
     FIsForeignKey: Boolean;
-  published
+  public
     constructor Create(const AName: string; const IsPrimaryKey: Boolean = False;
       const IsForeignKey: Boolean = False);
     function Name: string;

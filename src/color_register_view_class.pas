@@ -1,6 +1,6 @@
 unit color_register_view_class;
 
-{$mode objfpc}{$H+}{$M+}
+{$mode objfpc}{$H+}
 
 interface
 
@@ -12,7 +12,7 @@ type
   { TColorRegisterView }
 
   TColorRegisterView = class (TInterfacedObject, IColorRegisterView)
-  published
+  public
     class function New: IColorRegisterView;
     procedure Show;
     procedure Save(const AColor: IColor);
