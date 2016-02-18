@@ -6,11 +6,13 @@ uses
   {$IFDEF UNIX}{$IFDEF UseCThreads}
   cthreads,
   {$ENDIF}{$ENDIF}
-  Classes, SysUtils, CustApp, color_int, color_class, color_register_view_int,
-  color_register_view_class, color_list_class, result_int, result_status_enum,
+  Classes, SysUtils, CustApp, color_int, color_class,
+  color_list_class, result_int, result_status_enum,
   result_class, db_table_int, db_field_list_class, db_table_class,
-  db_field_list_int, color_save_int, color_save_class, color_model_class,
-  db_connection_int, db_connection_class;
+  db_field_list_int, color_model_class,
+  db_connection_int, db_connection_class, color_menu_view_class,
+color_alter_int,
+messages_res, color_insert_class, color_alter_class, color_alter_view_class;
 
 type
 
@@ -48,7 +50,7 @@ begin
 
   { add your program here }
 
-  TColorRegisterView.New.Show;
+  TColorMenuView.New.Show;
 
   // stop program loop
   Terminate;
