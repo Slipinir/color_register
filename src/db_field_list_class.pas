@@ -38,7 +38,7 @@ end;
 
 function TDbFieldList.Add(AColor: IDbField): Integer;
 begin
-  SetLength(FList, Length(FList)+1);
+  SetLength(FList, Count+1);
   Result:=Count-1;
   FList[Result]:=AColor;
 end;

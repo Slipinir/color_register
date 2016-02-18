@@ -48,7 +48,7 @@ end;
 
 function TColorList.Add(AColor: IColor): Integer;
 begin
-  SetLength(FList, Length(FList)+1);
+  SetLength(FList, Count+1);
   Result:=Count-1;
   Flist[Result]:=AColor;
 end;

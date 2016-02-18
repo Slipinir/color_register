@@ -4,3 +4,4 @@ src/backup/
 *.bak
 *.exe
 color_register
+*.lps

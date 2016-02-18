@@ -14,7 +14,7 @@ type
   TColorMenuView = class (TInterfacedObject, IView)
   private
     type
-      TOption = (opExit, opInsert, opAlter, opDelete);
+      TOption = (opExit, opInsert, opAlter, opDelete, opList);
     function ChosenOption(AChosenOption: TOption): IView;
     function ReadOption: TOption;
   public
@@ -25,7 +25,7 @@ type
 implementation
 
 uses
-  color_insert_view_class, messages_res;
+  color_insert_view_class, messages_res, color_listing_view_class;
 
 { TColorMenuView }
 
@@ -33,6 +33,7 @@ function TColorMenuView.ChosenOption(AChosenOption: TOption) : IView;
 begin
   case AChosenOption of
     opInsert: Result:=TColorInsertView.New;
+    opList: Result:=TColorListingView.New;
     //opAlter: Result:=TColorAlterView.New;
     //opDelete: TColorDeleteView.New;
   end;
@@ -62,12 +63,13 @@ procedure TColorMenuView.Show;
 var
   AChosenOption: TOption;
 begin
-  AChosenOption:=ReadOption;
-  while (AChosenOption<>opExit) do
-  begin
+  repeat
     Writeln(MesColorMenuViewTitle);
-    ChosenOption(AChosenOption).Show;
-  end;
+    AChosenOption:=ReadOption;
+
+    if (AChosenOption<>opExit) then
+      ChosenOption(AChosenOption).Show;
+  until(AChosenOption=opExit);
 end;
 
 end.
