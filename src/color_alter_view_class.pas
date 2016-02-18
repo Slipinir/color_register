@@ -27,8 +27,6 @@ begin
 end;
 
 procedure TColorAlterView.Show;
-var
-
 begin
 
 end;
