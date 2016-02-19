@@ -20,7 +20,7 @@ type
 implementation
 
 uses
-  color_alter_class, db_connection;
+  color_alter_class, db_connection, color_class;
 
 { TColorAlterView }
 
@@ -32,11 +32,21 @@ end;
 procedure TColorAlterView.Show;
 var
   AColorName: string;
+  AColorNewName: string;
 begin
   Writeln('Alter color:');
-  Writeln('Little one, what is the name of the color you want to alter?');
+  Writeln('What is the name of the color you want to alter?');
   Readln(AColorName);
-
+  Writeln('What is its new name?');
+  Readln(AColorNewName);
+  Writeln(
+    TColorAlter.New.Execute(
+      AColorName,
+      TColor.Create(
+        AColorNewName
+      )
+    ).Message
+  );
 end;
 
 end.

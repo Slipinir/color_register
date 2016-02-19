@@ -61,6 +61,7 @@ begin
           [QuotedStr(AColor.Name)]
         )
       );
+      ZDbConnection.Commit;
       Result:=TResult.Create(
         rsOk,
         Format(

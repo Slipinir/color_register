@@ -51,15 +51,7 @@ begin
             )
           );
           Next;
-        until(IsLast);
-        AColorModelList.Add(
-          TColorModel.New(
-            TColor.Create(
-              GetStringByName('name')
-            ),
-            GetIntByName('id')
-          )
-        );
+        until(IsAfterLast);
         Result:=TResult.Create(
           rsOk,
           MesColorListingSuccessWithColors

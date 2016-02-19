@@ -86,6 +86,9 @@ end;
 
 function TColorAlter.Execute(const AName: string; const AColor: IColor
   ): IResult;
+var
+  Colors: string;
+  CollumnQuantity: Integer;
 begin
   try
     with ZDbConnection.CreateStatement.ExecuteQuery(
@@ -96,36 +99,67 @@ begin
     ) do
     begin
       First;
-      case GetInt(0) of
-        0:
-          Result:=TResult.Create(
-            rsError,
-            Format(
-              'No color that has %s in the name was found!',
-              [AnName]
-            )
-          );;
-        1:
-          ZDbConnection.CreateStatement.ExecuteQuery(
-            Format(
-              'UPDATE color SET name = %s WHERE name LIKE %s',
-              [QuotedStr(AName), QuotedStr('%' + AName + '%')]
-            )
-          ));
-        else begin
-          Writeln(
-            Format(
-              'More than a color was found with the name %s, they are:',
-              [AName]
-            )
-          );
-          while
+      CollumnQuantity:=GetInt(1);
+    end;
+    case CollumnQuantity of
+      0:
+        Result:=TResult.Create(
+          rsError,
+          Format(
+            'No color that has %s in the name was found!',
+            [AName]
+          )
+        );
+      1: begin
+        ZDbConnection.CreateStatement.ExecuteQuery(
+          Format(
+            'UPDATE color SET name = %s WHERE name LIKE %s',
+            [QuotedStr(AColor.Name), QuotedStr('%' + AName + '%')]
+          )
+        );
+        ZDbConnection.Commit;
+        Result:=TResult.Create(
+          rsOk,
+          Format(
+            'The color %s wass successfully changed to %s!',
+            [AName, AColor.Name]
+          )
+        );
+      end
+      else begin
+        Colors:='';
+        Colors:=
+          Format(
+            'More than a color was found with the %s in their name, they are:',
+            [AName]
+          ) + #13#10 +
+          'Id Name';
+        with ZDbConnection.CreateStatement.ExecuteQuery(
+          Format(
+            'SELECT id, name FROM color WHERE name LIKE %s',
+            [QuotedStr('%' + AName + '%')]
+          )
+        ) do
+        begin
+          First;
+          repeat
+            Colors:=Colors+#13#10+
+              Format(
+                '%2d %s',
+                [GetIntByName('id'), GetStringByName('name')]
+              );
+            Next;
+          until (IsAfterLast);
         end;
+        Result:=TResult.Create(
+          rsError,
+          Colors
+        );
       end;
     end;
   except
     on AnException: Exception do
-      Result:=Result.Create(
+      Result:=TResult.Create(
         rsError,
         Format(
           'An error ocurred trying to alter a color!' + #13#10 +
