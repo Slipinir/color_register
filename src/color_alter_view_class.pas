@@ -12,8 +12,6 @@ type
   { TColorAlterView }
 
   TColorAlterView = class (TInterfacedObject, IView)
-  private
-    function AskAColorName: string;
   public
     class function New: IView;
     procedure Show;
@@ -22,15 +20,9 @@ type
 implementation
 
 uses
-  color_alter_class;
+  color_alter_class, db_connection;
 
 { TColorAlterView }
-
-function TColorAlterView.AskAColorName: string;
-begin
-  Writeln('Little one, what is the name of the color you want to alter?');
-  Readln(Result);
-end;
 
 class function TColorAlterView.New: IView;
 begin
@@ -38,7 +30,12 @@ begin
 end;
 
 procedure TColorAlterView.Show;
+var
+  AColorName: string;
 begin
+  Writeln('Alter color:');
+  Writeln('Little one, what is the name of the color you want to alter?');
+  Readln(AColorName);
 
 end;
 

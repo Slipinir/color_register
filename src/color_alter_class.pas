@@ -6,65 +6,67 @@ interface
 
 uses
   Classes, SysUtils, color_alter_int, result_class, result_int, color_int,
-  result_status_enum, ZDbcIntfs;
+  ZDbcIntfs;
 
 type
 
   { TColorAlter }
 
   TColorAlter = class (TInterfacedObject, IColorAlter)
-  private
-    FConnection: IZConnection;
   public
-    constructor Create(AConnection: IZConnection);
-    class function New(AConnection: IZConnection): IColorAlter;
-    function Execute(AnId: Integer; AColor: IColor): IResult;
+    class function New: IColorAlter;
+    function Execute(const AnId: Integer; const AColor: IColor): IResult;
+    function Execute(const AName: string; const AColor: IColor): IResult;
   end;
 
 implementation
 
 uses
-  messages_res;
+  messages_res, db_connection, result_status_enum;
 
 { TColorAlter }
 
-constructor TColorAlter.Create(AConnection: IZConnection);
+class function TColorAlter.New: IColorAlter;
 begin
-  FConnection:=AConnection;
+  Result:=TColorAlter.Create;
 end;
 
-class function TColorAlter.New(AConnection: IZConnection): IColorAlter;
-begin
-  Result:=TColorAlter.Create(AConnection);
-end;
-
-function TColorAlter.Execute(AnId: Integer; AColor: IColor): IResult;
-var
-  AQuery: IZResultSet;
+function TColorAlter.Execute(const AnId: Integer; const AColor: IColor): IResult;
 begin
   try
-    AQuery:=FConnection.CreateStatement.ExecuteQuery(
+    if (ZDbConnection.CreateStatement.ExecuteQuery(
       Format(
-        'UPDATE color SET name = %s WHERE id = %d RETURNING ' +
-        '(SELECT name FROM color WHERE id = %d);',
-        [QuotedStr(AColor.Name),
-         AnId,
-         AnId]
+        'SELECT count(*) FROM color WHERE id = %d;',
+        [AnId]
       )
-    );
-    AQuery.First;
-    Result:=TResult.Create(
-      rsOk,
-      Format(
-        MesColorAlterSuccess,
-        [
-          AQuery.GetStringByName(
-            'name'
-          ),
-          AColor.Name
-        ]
-      )
-    );
+    ).GetInt(0) > 0) then
+    begin
+      with ZDbConnection.CreateStatement.ExecuteQuery(
+        Format(
+          'UPDATE color SET name = %s WHERE id = %d RETURNING ' +
+          '(SELECT name FROM color WHERE id = %d);',
+          [QuotedStr(AColor.Name), AnId, AnId]
+        )
+      ) do
+      begin
+        First;
+        Result:=TResult.Create(
+          rsOk,
+          Format(
+            MesColorAlterSuccess,
+            [GetStringByName('name'),AColor.Name]
+          )
+        );
+      end;
+    end else
+      Result:=TResult.Create(
+        rsError,
+        Format(
+          'The color with the Id %d wasn''t found!' + #13#10 +
+          'Maybe you typed it wrong, check if it''s the case.',
+          [AnId]
+        )
+      );
   except
     on AnException: Exception do
       Result:=TResult.Create(
@@ -80,6 +82,58 @@ begin
       );
   end;
 
+end;
+
+function TColorAlter.Execute(const AName: string; const AColor: IColor
+  ): IResult;
+begin
+  try
+    with ZDbConnection.CreateStatement.ExecuteQuery(
+      Format(
+        'SELECT count(*) FROM color WHERE name LIKE %s',
+        [QuotedStr('%' + AName + '%')]
+      )
+    ) do
+    begin
+      First;
+      case GetInt(0) of
+        0:
+          Result:=TResult.Create(
+            rsError,
+            Format(
+              'No color that has %s in the name was found!',
+              [AnName]
+            )
+          );;
+        1:
+          ZDbConnection.CreateStatement.ExecuteQuery(
+            Format(
+              'UPDATE color SET name = %s WHERE name LIKE %s',
+              [QuotedStr(AName), QuotedStr('%' + AName + '%')]
+            )
+          ));
+        else begin
+          Writeln(
+            Format(
+              'More than a color was found with the name %s, they are:',
+              [AName]
+            )
+          );
+          while
+        end;
+      end;
+    end;
+  except
+    on AnException: Exception do
+      Result:=Result.Create(
+        rsError,
+        Format(
+          'An error ocurred trying to alter a color!' + #13#10 +
+          'Error message: %s',
+          [AnException.Message]
+        )
+      );
+  end;
 end;
 
 end.

@@ -25,7 +25,8 @@ type
 implementation
 
 uses
-  color_insert_view_class, messages_res, color_listing_view_class;
+  color_insert_view_class, messages_res, color_listing_view_class,
+  color_alter_view_class;
 
 { TColorMenuView }
 
@@ -34,7 +35,7 @@ begin
   case AChosenOption of
     opInsert: Result:=TColorInsertView.New;
     opList: Result:=TColorListingView.New;
-    //opAlter: Result:=TColorAlterView.New;
+    opAlter: Result:=TColorAlterView.New;
     //opDelete: TColorDeleteView.New;
   end;
 end;

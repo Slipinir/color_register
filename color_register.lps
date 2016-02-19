@@ -3,14 +3,14 @@
   <ProjectSession>
     <Version Value="9"/>
     <BuildModes Active="Default"/>
-    <Units Count="101">
+    <Units Count="102">
       <Unit0>
         <Filename Value="color_register.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="11"/>
-        <TopLine Value="3"/>
-        <CursorPos X="3" Y="13"/>
-        <UsageCount Value="75"/>
+        <EditorIndex Value="13"/>
+        <TopLine Value="4"/>
+        <CursorPos X="40" Y="13"/>
+        <UsageCount Value="77"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -18,15 +18,15 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="35" Y="11"/>
-        <UsageCount Value="75"/>
+        <UsageCount Value="77"/>
       </Unit1>
       <Unit2>
         <Filename Value="src/color_class.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="14"/>
         <TopLine Value="4"/>
         <CursorPos Y="31"/>
-        <UsageCount Value="75"/>
+        <UsageCount Value="77"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -35,35 +35,35 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="15"/>
         <CursorPos X="25" Y="30"/>
-        <UsageCount Value="72"/>
+        <UsageCount Value="74"/>
       </Unit3>
       <Unit4>
         <Filename Value="src/result_int.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="26" Y="16"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
       </Unit4>
       <Unit5>
         <Filename Value="src/result_status_enum.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="35" Y="11"/>
-        <UsageCount Value="71"/>
+        <UsageCount Value="73"/>
       </Unit5>
       <Unit6>
         <Filename Value="src/result_class.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="64" Y="30"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="72"/>
       </Unit6>
       <Unit7>
         <Filename Value="src/db_table_int.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="16"/>
-        <UsageCount Value="69"/>
+        <UsageCount Value="71"/>
       </Unit7>
       <Unit8>
         <Filename Value="src/db_field_list_class.pas"/>
@@ -71,7 +71,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="35"/>
         <CursorPos X="25" Y="41"/>
-        <UsageCount Value="69"/>
+        <UsageCount Value="71"/>
       </Unit8>
       <Unit9>
         <Filename Value="src/db_table_class.pas"/>
@@ -79,14 +79,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="4"/>
         <CursorPos X="22" Y="17"/>
-        <UsageCount Value="68"/>
+        <UsageCount Value="70"/>
       </Unit9>
       <Unit10>
         <Filename Value="src/db_field_list_int.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="70" Y="11"/>
-        <UsageCount Value="59"/>
+        <UsageCount Value="61"/>
       </Unit10>
       <Unit11>
         <Filename Value="src/color_model_class.pas"/>
@@ -94,7 +94,7 @@
         <EditorIndex Value="3"/>
         <TopLine Value="3"/>
         <CursorPos X="3" Y="30"/>
-        <UsageCount Value="57"/>
+        <UsageCount Value="59"/>
         <Loaded Value="True"/>
       </Unit11>
       <Unit12>
@@ -106,136 +106,141 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="23"/>
         <CursorPos X="23" Y="34"/>
-        <UsageCount Value="52"/>
+        <UsageCount Value="54"/>
       </Unit12>
       <Unit13>
-        <Filename Value="src/db_connection_int.pas"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="42" Y="15"/>
-        <UsageCount Value="43"/>
-      </Unit13>
-      <Unit14>
         <Filename Value="src/db_connection.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="13"/>
-        <TopLine Value="6"/>
-        <CursorPos X="22" Y="26"/>
+        <EditorIndex Value="16"/>
+        <TopLine Value="34"/>
+        <CursorPos X="25" Y="23"/>
+        <UsageCount Value="49"/>
+        <Loaded Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="src/color_menu_view_class.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="15"/>
+        <TopLine Value="20"/>
+        <CursorPos X="25" Y="29"/>
         <UsageCount Value="47"/>
         <Loaded Value="True"/>
       </Unit14>
       <Unit15>
-        <Filename Value="src/color_menu_view_class.pas"/>
+        <Filename Value="src/color_alter_int.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="12"/>
-        <TopLine Value="25"/>
-        <CursorPos X="7" Y="37"/>
-        <UsageCount Value="45"/>
+        <TopLine Value="3"/>
+        <CursorPos X="72" Y="13"/>
+        <UsageCount Value="47"/>
         <Loaded Value="True"/>
       </Unit15>
       <Unit16>
-        <Filename Value="src/color_alter_int.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="69" Y="11"/>
-        <UsageCount Value="45"/>
-      </Unit16>
-      <Unit17>
         <Filename Value="src/messages_res.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="45"/>
-      </Unit17>
-      <Unit18>
+        <UsageCount Value="47"/>
+      </Unit16>
+      <Unit17>
         <Filename Value="src/color_insert_class.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="8"/>
         <TopLine Value="29"/>
         <CursorPos X="56" Y="33"/>
-        <UsageCount Value="58"/>
+        <UsageCount Value="60"/>
+        <Loaded Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="src/color_alter_class.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="86"/>
+        <CursorPos X="5" Y="95"/>
+        <UsageCount Value="44"/>
         <Loaded Value="True"/>
       </Unit18>
       <Unit19>
-        <Filename Value="src/color_alter_class.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="14"/>
-        <CursorPos X="29" Y="29"/>
-        <UsageCount Value="42"/>
-      </Unit19>
-      <Unit20>
         <Filename Value="src/color_alter_view_class.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="9"/>
-        <TopLine Value="4"/>
-        <CursorPos X="3" Y="25"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="16"/>
+        <CursorPos X="3" Y="39"/>
+        <UsageCount Value="42"/>
+        <Loaded Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="src/color_list_int.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="7"/>
+        <CursorPos X="31" Y="16"/>
         <UsageCount Value="40"/>
         <Loaded Value="True"/>
       </Unit20>
       <Unit21>
-        <Filename Value="src/color_list_int.pas"/>
+        <Filename Value="src/color_listing_int.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
-        <CursorPos X="29" Y="16"/>
-        <UsageCount Value="38"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="3"/>
+        <CursorPos X="22" Y="8"/>
+        <UsageCount Value="40"/>
         <Loaded Value="True"/>
       </Unit21>
       <Unit22>
-        <Filename Value="src/color_listing_int.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="4"/>
-        <CursorPos X="75" Y="12"/>
-        <UsageCount Value="38"/>
-      </Unit22>
-      <Unit23>
         <Filename Value="src/color_model_list_int.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
         <CursorPos X="25" Y="17"/>
-        <UsageCount Value="38"/>
+        <UsageCount Value="40"/>
         <Loaded Value="True"/>
-      </Unit23>
-      <Unit24>
+      </Unit22>
+      <Unit23>
         <Filename Value="src/color_model_list_class.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="12"/>
         <CursorPos X="60" Y="21"/>
-        <UsageCount Value="38"/>
-      </Unit24>
-      <Unit25>
+        <UsageCount Value="40"/>
+      </Unit23>
+      <Unit24>
         <Filename Value="src/integer_list_int.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3"/>
         <CursorPos X="27" Y="14"/>
-        <UsageCount Value="38"/>
-      </Unit25>
-      <Unit26>
+        <UsageCount Value="40"/>
+      </Unit24>
+      <Unit25>
         <Filename Value="src/integer_list_class.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="25"/>
         <CursorPos X="35" Y="33"/>
-        <UsageCount Value="38"/>
-      </Unit26>
-      <Unit27>
+        <UsageCount Value="40"/>
+      </Unit25>
+      <Unit26>
         <Filename Value="src/color_listing_class.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="9"/>
-        <CursorPos X="80" Y="29"/>
-        <UsageCount Value="35"/>
+        <TopLine Value="21"/>
+        <CursorPos X="22" Y="24"/>
+        <UsageCount Value="37"/>
+        <Loaded Value="True"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="src/color_listing_view_class.pas"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="21"/>
+        <CursorPos X="38" Y="28"/>
+        <UsageCount Value="34"/>
         <Loaded Value="True"/>
       </Unit27>
       <Unit28>
-        <Filename Value="src/color_listing_view_class.pas"/>
-        <IsPartOfProject Value="True"/>
-        <TopLine Value="8"/>
-        <CursorPos X="25" Y="49"/>
-        <UsageCount Value="32"/>
-        <Loaded Value="True"/>
+        <Filename Value="src/db_connection_int.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="42" Y="15"/>
+        <UsageCount Value="43"/>
       </Unit28>
       <Unit29>
         <Filename Value="src/view_int.pas"/>
@@ -245,16 +250,16 @@
       </Unit29>
       <Unit30>
         <Filename Value="src/color_insert_view_class.pas"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="9"/>
         <CursorPos X="34" Y="23"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
       </Unit30>
       <Unit31>
         <Filename Value="src/color_insert_int.pas"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="7"/>
         <CursorPos X="46" Y="15"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="44"/>
         <Loaded Value="True"/>
       </Unit31>
       <Unit32>
@@ -426,7 +431,7 @@
       <Unit58>
         <Filename Value="src/color_register_view.pas"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="13"/>
+        <TopLine Value="7"/>
         <CursorPos X="63" Y="26"/>
         <UsageCount Value="15"/>
       </Unit58>
@@ -528,7 +533,7 @@
         <Filename Value="src/color_model_int.pas"/>
         <EditorIndex Value="2"/>
         <CursorPos X="22" Y="15"/>
-        <UsageCount Value="19"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit73>
       <Unit74>
@@ -720,127 +725,134 @@
         <UsageCount Value="10"/>
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit100>
+      <Unit101>
+        <Filename Value="src/color_register_view_int.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6"/>
+        <CursorPos X="3" Y="14"/>
+        <UsageCount Value="10"/>
+      </Unit101>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="src/color_listing_view_class.pas"/>
-        <Caret Line="88" Column="33" TopLine="67"/>
+        <Filename Value="src/db_connection.pas"/>
+        <Caret Line="34" TopLine="6"/>
       </Position1>
       <Position2>
-        <Filename Value="src/color_model_class.pas"/>
-        <Caret Line="23" Column="20" TopLine="2"/>
+        <Filename Value="src/db_connection.pas"/>
+        <Caret Line="40" TopLine="6"/>
       </Position2>
       <Position3>
-        <Filename Value="src/color_model_class.pas"/>
-        <Caret Line="22" Column="17"/>
+        <Filename Value="src/db_connection.pas"/>
+        <Caret Line="26" Column="20" TopLine="6"/>
       </Position3>
       <Position4>
-        <Filename Value="src/color_listing_view_class.pas"/>
-        <Caret Line="88" Column="33" TopLine="67"/>
+        <Filename Value="src/db_connection.pas"/>
+        <Caret Line="25" Column="78" TopLine="5"/>
       </Position4>
       <Position5>
-        <Filename Value="src/color_listing_view_class.pas"/>
-        <Caret Line="102" Column="26" TopLine="77"/>
+        <Filename Value="src/color_insert_view_class.pas"/>
+        <Caret Line="50" Column="25" TopLine="20"/>
       </Position5>
       <Position6>
-        <Filename Value="src/color_listing_view_class.pas"/>
-        <Caret Line="87" Column="3" TopLine="60"/>
+        <Filename Value="src/color_alter_view_class.pas"/>
+        <Caret Line="33" Column="26" TopLine="5"/>
       </Position6>
       <Position7>
-        <Filename Value="src/color_listing_view_class.pas"/>
-        <Caret Line="81" Column="3" TopLine="60"/>
+        <Filename Value="src/color_alter_view_class.pas"/>
+        <Caret Line="25" Column="16" TopLine="4"/>
       </Position7>
       <Position8>
         <Filename Value="src/color_listing_view_class.pas"/>
-        <Caret Line="84" Column="26" TopLine="60"/>
+        <Caret Line="108" Column="62" TopLine="71"/>
       </Position8>
       <Position9>
         <Filename Value="src/color_listing_view_class.pas"/>
-        <Caret Line="81" Column="26" TopLine="60"/>
+        <Caret Line="49" Column="25" TopLine="8"/>
       </Position9>
       <Position10>
-        <Filename Value="src/color_model_list_int.pas"/>
-        <Caret Line="17" Column="65"/>
+        <Filename Value="src/color_listing_class.pas"/>
+        <Caret Line="75" Column="7" TopLine="65"/>
       </Position10>
       <Position11>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="25" Column="78"/>
+        <Filename Value="src/color_listing_view_class.pas"/>
+        <Caret Line="108" Column="19" TopLine="97"/>
       </Position11>
       <Position12>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="32" Column="43" TopLine="6"/>
+        <Filename Value="src/color_listing_view_class.pas"/>
+        <Caret Line="98" Column="59" TopLine="93"/>
       </Position12>
       <Position13>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="23" TopLine="6"/>
+        <Filename Value="src/color_listing_view_class.pas"/>
+        <Caret Line="77" Column="36" TopLine="71"/>
       </Position13>
       <Position14>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="31" TopLine="6"/>
+        <Filename Value="src/color_listing_view_class.pas"/>
+        <Caret Line="83" Column="45" TopLine="77"/>
       </Position14>
       <Position15>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="23" TopLine="6"/>
+        <Filename Value="src/color_listing_view_class.pas"/>
+        <Caret Line="28" Column="38" TopLine="21"/>
       </Position15>
       <Position16>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="30" TopLine="6"/>
+        <Filename Value="src/color_alter_view_class.pas"/>
+        <Caret Line="27" Column="25" TopLine="25"/>
       </Position16>
       <Position17>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="23" TopLine="6"/>
+        <Filename Value="src/color_alter_view_class.pas"/>
+        <Caret Line="14" Column="53"/>
       </Position17>
       <Position18>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="29" TopLine="6"/>
+        <Filename Value="src/color_menu_view_class.pas"/>
+        <Caret Line="37" Column="22" TopLine="29"/>
       </Position18>
       <Position19>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="27" TopLine="6"/>
+        <Filename Value="src/color_alter_view_class.pas"/>
+        <Caret Line="33" Column="77" TopLine="19"/>
       </Position19>
       <Position20>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="23" TopLine="6"/>
+        <Filename Value="src/color_alter_view_class.pas"/>
+        <Caret Line="22" Column="22" TopLine="13"/>
       </Position20>
       <Position21>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="34" TopLine="6"/>
+        <Filename Value="src/color_alter_class.pas"/>
+        <Caret Line="16" Column="43" TopLine="7"/>
       </Position21>
       <Position22>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="36" TopLine="6"/>
+        <Filename Value="src/color_alter_class.pas"/>
+        <Caret Line="33" Column="36" TopLine="31"/>
       </Position22>
       <Position23>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="34" TopLine="6"/>
+        <Filename Value="src/color_alter_class.pas"/>
+        <Caret Line="14" Column="15" TopLine="7"/>
       </Position23>
       <Position24>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="40" TopLine="6"/>
+        <Filename Value="src/color_alter_view_class.pas"/>
+        <Caret Line="22" Column="22" TopLine="13"/>
       </Position24>
       <Position25>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="26" Column="20" TopLine="6"/>
+        <Filename Value="src/color_alter_class.pas"/>
+        <Caret Line="19" Column="41" TopLine="7"/>
       </Position25>
       <Position26>
-        <Filename Value="src/db_connection.pas"/>
-        <Caret Line="25" Column="78" TopLine="5"/>
+        <Filename Value="src/color_alter_class.pas"/>
+        <Caret Line="69" Column="9" TopLine="55"/>
       </Position26>
       <Position27>
-        <Filename Value="src/color_insert_view_class.pas"/>
-        <Caret Line="50" Column="25" TopLine="20"/>
+        <Filename Value="src/color_alter_class.pas"/>
+        <Caret Line="94" Column="7" TopLine="83"/>
       </Position27>
       <Position28>
-        <Filename Value="src/color_alter_view_class.pas"/>
-        <Caret Line="33" Column="26" TopLine="5"/>
+        <Filename Value="src/color_alter_class.pas"/>
+        <Caret Line="91" Column="46" TopLine="83"/>
       </Position28>
       <Position29>
-        <Filename Value="src/color_alter_view_class.pas"/>
-        <Caret Line="25" Column="16" TopLine="4"/>
+        <Filename Value="src/color_alter_class.pas"/>
+        <Caret Line="93" Column="39" TopLine="85"/>
       </Position29>
       <Position30>
-        <Filename Value="src/color_listing_view_class.pas"/>
-        <Caret Line="108" Column="62" TopLine="71"/>
+        <Filename Value="src/color_alter_class.pas"/>
+        <Caret Line="94" Column="7" TopLine="86"/>
       </Position30>
     </JumpHistory>
   </ProjectSession>

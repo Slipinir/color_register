@@ -5,8 +5,8 @@ unit color_listing_class;
 interface
 
 uses
-  Classes, SysUtils, color_listing_int, integer_list_int, color_model_list_int,
-  result_int, color_model_int;
+  Classes, SysUtils, color_listing_int, color_model_list_int, result_int,
+  color_model_int;
 
 type
 
@@ -16,10 +16,6 @@ type
   public
     class function New: IColorListing;
     function Execute(var AColorModelList: IColorModelList): IResult; overload;
-    function Execute(const AnIdList: IIntegerList;
-      var AColorModelList: IColorModelList): IResult; overload;
-    function Execute(const AnId: Integer; var AColorModel: IColorModel):
-        IResult; overload;
   end;
 
 implementation
@@ -73,19 +69,6 @@ begin
   except
     on E: Exception do
   end;
-
-end;
-
-function TColorListing.Execute(const AnIdList: IIntegerList;
-  var AColorModelList: IColorModelList): IResult;
-begin
-
-end;
-
-function TColorListing.Execute(const AnId: Integer; var AColorModel: IColorModel):
-  IResult;
-begin
-
 end;
 
 end.
