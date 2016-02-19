@@ -22,7 +22,7 @@ type
 implementation
 
 uses
-  db_connection_class, color_alter_class;
+  color_alter_class;
 
 { TColorAlterView }
 

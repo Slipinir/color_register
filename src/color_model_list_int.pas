@@ -8,6 +8,9 @@ uses
   Classes, SysUtils, color_model_int;
 
 type
+
+  { IColorModelList }
+
   IColorModelList = interface ['{C1FBB185-4E47-4B38-8094-FBBE8D0ED4AD}']
   function Add(AColor: IColorModel): Integer;
   function Get(Index: Integer): IColorModel;

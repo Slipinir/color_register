@@ -6,19 +6,15 @@ interface
 
 uses
   Classes, SysUtils, color_listing_int, integer_list_int, color_model_list_int,
-  result_int, color_model_int, ZDbcIntfs;
+  result_int, color_model_int;
 
 type
 
   { TColorListing }
 
   TColorListing = class (TInterfacedObject, IColorListing)
-  private
-    FConnection: IZConnection;
-    function QueryToColorModel(AQuery: IZResultSet): IColorModel;
   public
-    constructor Create(AConnection: IZConnection);
-    class function New(AConnection: IZConnection): IColorListing;
+    class function New: IColorListing;
     function Execute(var AColorModelList: IColorModelList): IResult; overload;
     function Execute(const AnIdList: IIntegerList;
       var AColorModelList: IColorModelList): IResult; overload;
@@ -30,54 +26,49 @@ implementation
 
 uses
   color_model_class, color_class, result_class, result_status_enum,
-  messages_res;
+  messages_res, db_connection;
 
 { TColorListing }
 
-function TColorListing.QueryToColorModel(AQuery: IZResultSet): IColorModel;
+class function TColorListing.New: IColorListing;
 begin
-  Result:=TColorModel.New(
-    TColor.Create(
-      AQuery.GetStringByName('name')
-    ),
-    AQuery.GetIntByName('id')
-  );
-end;
-
-constructor TColorListing.Create(AConnection: IZConnection);
-begin
-  FConnection:=AConnection;
-end;
-
-class function TColorListing.New(AConnection: IZConnection): IColorListing;
-begin
-  Result:=TColorListing.Create(AConnection);
+  Result:=TColorListing.Create;
 end;
 
 function TColorListing.Execute(var AColorModelList: IColorModelList): IResult;
-var
-  AQuery: IZResultSet;
 begin
   try
-    AQuery:=FConnection.CreateStatement.ExecuteQuery(
-      'SELECT id, name FROM color;'
-    );
-    AQuery.First;
-    if AQuery.GetIntByName('id') > 0 then
+    with ZDbConnection.CreateStatement.ExecuteQuery(
+        'SELECT id, name FROM color;'
+      ) do
     begin
-      repeat
+      First;
+      if GetIntByName('id') > 0 then
+      begin
+        repeat
+          AColorModelList.Add(
+            TColorModel.New(
+              TColor.Create(
+                GetStringByName('name')
+              ),
+              GetIntByName('id')
+            )
+          );
+          Next;
+        until(IsLast);
         AColorModelList.Add(
-          QueryToColorModel(AQuery)
+          TColorModel.New(
+            TColor.Create(
+              GetStringByName('name')
+            ),
+            GetIntByName('id')
+          )
         );
-        AQuery.Next;
-      until(AQuery.IsLast);
-      AColorModelList.Add(
-        QueryToColorModel(AQuery)
-      );
-      Result:=TResult.Create(
-        rsOk,
-        MesColorListingSuccessWithColors
-      );
+        Result:=TResult.Create(
+          rsOk,
+          MesColorListingSuccessWithColors
+        );
+      end;
     end;
   except
     on E: Exception do

@@ -25,8 +25,8 @@ type
 implementation
 
 uses
-  messages_res, color_listing_class, db_connection_class,
-  color_model_list_class, integer_list_int, integer_list_class;
+  messages_res, color_listing_class, color_model_int, integer_list_int,
+  integer_list_class, color_model_class, color_model_list_class;
 
 { TColorListingView }
 
@@ -75,6 +75,7 @@ procedure TColorListingView.Show;
 var
   AnAnswer: string;
   AColorModelList: IColorModelList;
+  AColorModel: IColorModel;
   AnOption: TOption;
   AnId: Integer;
   AnIdList: IIntegerList;
@@ -82,6 +83,8 @@ begin
   AnAnswer:='Y';
   while (AnAnswer[1]=YES) do
   begin
+    AColorModelList:=TColorModelList.Create;
+    AColorModel:=TColorModel.Create;
     Writeln('Color list options:');
     Writeln('1-All;');
     Writeln('2-Per Id;');
@@ -91,17 +94,14 @@ begin
     AnOption:=GetOption;
     if (AnOption <> opCancel) then
     begin
-      AColorModelList:=TColorModelList.Create;
       case AnOption of
-        opAll: TColorListing.New(DbConnection.ZDbConnection).Execute(AColorModelList);;
+        opAll: TColorListing.New.Execute(AColorModelList);
         opById: begin
           Writeln('Type an id:');
           Readln(AnId);
-          TColorListing.New(
-            DbConnection.ZDbConnection
-          ).Execute(
+          TColorListing.New.Execute(
             AnId,
-            AColorModelList
+            AColorModel
           );
         end;
         opByMultipleIds: ;

@@ -20,7 +20,7 @@ type
 implementation
 
 uses
-  color_insert_class, color_class, db_connection_class, messages_res;
+  color_insert_class, color_class, messages_res;
 
 { TColorInsertView }
 
@@ -47,9 +47,7 @@ begin
       Writeln(MesColorInsertViewQuestion);
       Readln(AName);
       Writeln(
-        TColorInsert.New(
-          DbConnection.ZDbConnection
-        ).Execute(
+        TColorInsert.New.Execute(
           TColor.Create(
             AName
           )
