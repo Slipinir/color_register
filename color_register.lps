@@ -7,95 +7,100 @@
       <Unit0>
         <Filename Value="color_register.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="13"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="4"/>
         <CursorPos X="40" Y="13"/>
-        <UsageCount Value="90"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="91"/>
       </Unit0>
       <Unit1>
         <Filename Value="../../Dropbox/Documentos/color_register/src/color_int.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="35" Y="11"/>
-        <UsageCount Value="90"/>
+        <UsageCount Value="91"/>
       </Unit1>
       <Unit2>
         <Filename Value="src/color_class.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="14"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="19"/>
         <CursorPos Y="31"/>
-        <UsageCount Value="90"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="91"/>
       </Unit2>
       <Unit3>
         <Filename Value="src/color_list_class.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="15"/>
         <CursorPos X="25" Y="30"/>
-        <UsageCount Value="87"/>
+        <UsageCount Value="88"/>
       </Unit3>
       <Unit4>
         <Filename Value="src/result_int.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="26" Y="16"/>
-        <UsageCount Value="86"/>
+        <UsageCount Value="87"/>
       </Unit4>
       <Unit5>
         <Filename Value="src/result_status_enum.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="35" Y="11"/>
-        <UsageCount Value="86"/>
+        <UsageCount Value="87"/>
       </Unit5>
       <Unit6>
         <Filename Value="src/result_class.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="64" Y="30"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="86"/>
       </Unit6>
       <Unit7>
         <Filename Value="src/db_table_int.pas"/>
-        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="16"/>
-        <UsageCount Value="84"/>
+        <UsageCount Value="85"/>
       </Unit7>
       <Unit8>
         <Filename Value="src/db_field_list_class.pas"/>
-        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="35"/>
         <CursorPos X="25" Y="41"/>
-        <UsageCount Value="84"/>
+        <UsageCount Value="85"/>
       </Unit8>
       <Unit9>
         <Filename Value="src/db_table_class.pas"/>
-        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="4"/>
         <CursorPos X="22" Y="17"/>
-        <UsageCount Value="83"/>
+        <UsageCount Value="84"/>
       </Unit9>
       <Unit10>
         <Filename Value="src/db_field_list_int.pas"/>
-        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="70" Y="11"/>
-        <UsageCount Value="74"/>
+        <UsageCount Value="75"/>
       </Unit10>
       <Unit11>
         <Filename Value="src/color_model_class.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="3"/>
         <CursorPos X="3" Y="30"/>
-        <UsageCount Value="72"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="73"/>
       </Unit11>
       <Unit12>
         <Filename Value="../teste/teste.pas"/>
@@ -103,173 +108,181 @@
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="23"/>
         <CursorPos X="23" Y="34"/>
-        <UsageCount Value="67"/>
+        <UsageCount Value="68"/>
       </Unit12>
       <Unit13>
         <Filename Value="src/db_connection.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="16"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="34"/>
         <CursorPos X="25" Y="23"/>
-        <UsageCount Value="62"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="63"/>
       </Unit13>
       <Unit14>
         <Filename Value="src/color_menu_view_class.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="15"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
         <CursorPos X="29" Y="35"/>
-        <UsageCount Value="60"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="61"/>
       </Unit14>
       <Unit15>
         <Filename Value="src/color_alter_int.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="12"/>
-        <TopLine Value="3"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="72" Y="13"/>
-        <UsageCount Value="60"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="61"/>
       </Unit15>
       <Unit16>
         <Filename Value="src/messages_res.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="60"/>
+        <UsageCount Value="61"/>
       </Unit16>
       <Unit17>
         <Filename Value="src/color_insert_class.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="8"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="53"/>
         <CursorPos X="25" Y="55"/>
-        <UsageCount Value="73"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="74"/>
       </Unit17>
       <Unit18>
         <Filename Value="src/color_alter_class.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="11"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="101"/>
         <CursorPos X="29" Y="114"/>
-        <UsageCount Value="57"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="58"/>
       </Unit18>
       <Unit19>
         <Filename Value="src/color_alter_view_class.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="10"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
-        <CursorPos X="3" Y="32"/>
-        <UsageCount Value="55"/>
-        <Loaded Value="True"/>
+        <CursorPos X="44" Y="44"/>
+        <UsageCount Value="56"/>
       </Unit19>
       <Unit20>
         <Filename Value="src/color_list_int.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="5"/>
         <CursorPos X="31" Y="16"/>
-        <UsageCount Value="53"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="54"/>
       </Unit20>
       <Unit21>
         <Filename Value="src/color_listing_int.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="6"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="22" Y="8"/>
-        <UsageCount Value="53"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="54"/>
       </Unit21>
       <Unit22>
         <Filename Value="src/color_model_list_int.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="1"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="25" Y="17"/>
-        <UsageCount Value="53"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="54"/>
       </Unit22>
       <Unit23>
         <Filename Value="src/color_model_list_class.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="12"/>
         <CursorPos X="60" Y="21"/>
-        <UsageCount Value="53"/>
+        <UsageCount Value="54"/>
       </Unit23>
       <Unit24>
         <Filename Value="src/integer_list_int.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3"/>
         <CursorPos X="27" Y="14"/>
-        <UsageCount Value="53"/>
+        <UsageCount Value="54"/>
       </Unit24>
       <Unit25>
         <Filename Value="src/integer_list_class.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="25"/>
         <CursorPos X="35" Y="33"/>
-        <UsageCount Value="53"/>
+        <UsageCount Value="54"/>
       </Unit25>
       <Unit26>
         <Filename Value="src/color_listing_class.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="4"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
         <CursorPos X="30" Y="54"/>
-        <UsageCount Value="50"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="51"/>
       </Unit26>
       <Unit27>
         <Filename Value="src/color_listing_view_class.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="21"/>
         <CursorPos X="38" Y="28"/>
-        <UsageCount Value="47"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="48"/>
       </Unit27>
       <Unit28>
         <Filename Value="src/db_connection_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="42" Y="15"/>
         <UsageCount Value="41"/>
       </Unit28>
       <Unit29>
         <Filename Value="src/view_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3"/>
         <UsageCount Value="42"/>
       </Unit29>
       <Unit30>
         <Filename Value="src/color_insert_view_class.pas"/>
-        <EditorIndex Value="9"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="39"/>
         <CursorPos X="24" Y="48"/>
         <UsageCount Value="59"/>
-        <Loaded Value="True"/>
       </Unit30>
       <Unit31>
         <Filename Value="src/color_insert_int.pas"/>
-        <EditorIndex Value="7"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="46" Y="15"/>
         <UsageCount Value="51"/>
-        <Loaded Value="True"/>
       </Unit31>
       <Unit32>
         <Filename Value="src/dao_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="73" Y="12"/>
         <UsageCount Value="26"/>
       </Unit32>
       <Unit33>
         <Filename Value="src/color_dao_class.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="11"/>
         <CursorPos X="32" Y="33"/>
@@ -277,36 +290,42 @@
       </Unit33>
       <Unit34>
         <Filename Value="src/color_dao_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="43" Y="8"/>
         <UsageCount Value="28"/>
       </Unit34>
       <Unit35>
         <Filename Value="src/color_dao.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="48" Y="19"/>
         <UsageCount Value="13"/>
       </Unit35>
       <Unit36>
         <Filename Value="dao/color_dao_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="24" Y="10"/>
         <UsageCount Value="12"/>
       </Unit36>
       <Unit37>
         <Filename Value="model/color_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="58" Y="15"/>
         <UsageCount Value="12"/>
       </Unit37>
       <Unit38>
         <Filename Value="model/color_list_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="26" Y="13"/>
         <UsageCount Value="12"/>
       </Unit38>
       <Unit39>
         <Filename Value="/usr/lib/fpc/src/rtl/objpas/classes/classesh.inc"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="581"/>
         <CursorPos X="3" Y="603"/>
@@ -314,42 +333,49 @@
       </Unit39>
       <Unit40>
         <Filename Value="model/color_list_class.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="16"/>
         <UsageCount Value="12"/>
       </Unit40>
       <Unit41>
         <Filename Value="src/dao.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="35" Y="11"/>
         <UsageCount Value="12"/>
       </Unit41>
       <Unit42>
         <Filename Value="../../Dropbox/Documentos/color_register/src/dao.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="14" Y="15"/>
         <UsageCount Value="12"/>
       </Unit42>
       <Unit43>
         <Filename Value="../../Dropbox/Documentos/color_register/src/color_dao.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="26" Y="16"/>
         <UsageCount Value="2"/>
       </Unit43>
       <Unit44>
         <Filename Value="../../Dropbox/Documentos/color_register/color_register.lpr"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="68" Y="9"/>
         <UsageCount Value="2"/>
       </Unit44>
       <Unit45>
         <Filename Value="src/color_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="14"/>
         <UsageCount Value="5"/>
       </Unit45>
       <Unit46>
         <Filename Value="/usr/lib/fpc/src/packages/fcl-db/src/base/db.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1362"/>
         <CursorPos X="35" Y="1404"/>
@@ -357,6 +383,7 @@
       </Unit46>
       <Unit47>
         <Filename Value="/usr/lib/fpc/src/packages/paszlib/src/zbase.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="459"/>
         <CursorPos Y="484"/>
@@ -364,6 +391,7 @@
       </Unit47>
       <Unit48>
         <Filename Value="/usr/lib/fpc/src/packages/postgres/src/postgres.pp"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="78"/>
         <CursorPos X="4" Y="101"/>
@@ -371,11 +399,13 @@
       </Unit48>
       <Unit49>
         <Filename Value="/Lazarus/zeosdbo/packages/lazarus/zcomponent.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="2"/>
       </Unit49>
       <Unit50>
         <Filename Value="/Lazarus/zeosdbo/src/core/ZClasses.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="194"/>
         <CursorPos X="3" Y="218"/>
@@ -383,6 +413,7 @@
       </Unit50>
       <Unit51>
         <Filename Value="/Lazarus/zeosdbo/src/dbc/ZDbcPostgreSql.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="174"/>
         <CursorPos Y="174"/>
@@ -390,6 +421,7 @@
       </Unit51>
       <Unit52>
         <Filename Value="/Lazarus/zeosdbo/src/component/ZQuerySQLEditor.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="95"/>
         <CursorPos X="5" Y="95"/>
@@ -397,6 +429,7 @@
       </Unit52>
       <Unit53>
         <Filename Value="/Lazarus/zeosdbo/src/component/ZDataset.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="58"/>
         <CursorPos X="51" Y="80"/>
@@ -404,18 +437,21 @@
       </Unit53>
       <Unit54>
         <Filename Value="src/model_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="45" Y="12"/>
         <UsageCount Value="13"/>
       </Unit54>
       <Unit55>
         <Filename Value="src/view_model_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="25" Y="11"/>
         <UsageCount Value="12"/>
       </Unit55>
       <Unit56>
         <Filename Value="/usr/lib/fpc/src/packages/ncurses/src/form.pp"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="58"/>
         <UsageCount Value="2"/>
@@ -423,6 +459,7 @@
       <Unit57>
         <Filename Value="/usr/lib/lazarus/lcl/forms.pp"/>
         <UnitName Value="Forms"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="583"/>
         <CursorPos X="19" Y="614"/>
@@ -430,6 +467,7 @@
       </Unit57>
       <Unit58>
         <Filename Value="src/color_register_view.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="7"/>
         <CursorPos X="63" Y="26"/>
@@ -437,12 +475,14 @@
       </Unit58>
       <Unit59>
         <Filename Value="src/new_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="17" Y="13"/>
         <UsageCount Value="12"/>
       </Unit59>
       <Unit60>
         <Filename Value="/usr/lib/fpc/src/rtl/objpas/fgl.pp"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="46"/>
         <CursorPos X="3" Y="88"/>
@@ -451,6 +491,7 @@
       <Unit61>
         <Filename Value="/usr/lib/fpc/src/rtl/objpas/types.pp"/>
         <UnitName Value="Types"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="52"/>
         <CursorPos Y="52"/>
@@ -458,12 +499,14 @@
       </Unit61>
       <Unit62>
         <Filename Value="/usr/lib/fpc/src/rtl/inc/objpash.inc"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="3"/>
       </Unit62>
       <Unit63>
         <Filename Value="src/unit1.pas"/>
         <UnitName Value="Unit1"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
         <CursorPos X="44" Y="6"/>
@@ -471,18 +514,21 @@
       </Unit63>
       <Unit64>
         <Filename Value="/lazarus/components/zeosdb/src/component/ZDataset.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="73"/>
         <UsageCount Value="2"/>
       </Unit64>
       <Unit65>
         <Filename Value="src/db_field_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="34" Y="14"/>
         <UsageCount Value="19"/>
       </Unit65>
       <Unit66>
         <Filename Value="src/db_field_class.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="11"/>
         <CursorPos X="21" Y="51"/>
@@ -490,6 +536,7 @@
       </Unit66>
       <Unit67>
         <Filename Value="/Lazarus/zeosdbo/src/component/ZConnection.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="41"/>
         <CursorPos X="14" Y="75"/>
@@ -497,6 +544,7 @@
       </Unit67>
       <Unit68>
         <Filename Value="/Lazarus/zeosdbo/src/component/ZAbstractConnection.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="80"/>
         <CursorPos X="3" Y="102"/>
@@ -504,11 +552,13 @@
       </Unit68>
       <Unit69>
         <Filename Value="/Lazarus/zeosdbo/src/component/ZAbstractRODataset.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="4"/>
       </Unit69>
       <Unit70>
         <Filename Value="/Lazarus/zeosdbo/src/component/ZAbstractDataset.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="83"/>
         <CursorPos X="3" Y="105"/>
@@ -517,6 +567,7 @@
       <Unit71>
         <Filename Value="/usr/lib/fpc/src/packages/fcl-base/src/custapp.pp"/>
         <UnitName Value="CustApp"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="24"/>
         <CursorPos X="15" Y="46"/>
@@ -524,6 +575,7 @@
       </Unit71>
       <Unit72>
         <Filename Value="/Lazarus/zeosdbo/src/dbc/ZDbcIntfs.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1074"/>
         <CursorPos X="29" Y="1085"/>
@@ -531,19 +583,21 @@
       </Unit72>
       <Unit73>
         <Filename Value="src/color_model_int.pas"/>
-        <EditorIndex Value="2"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="-1"/>
         <CursorPos X="22" Y="15"/>
         <UsageCount Value="27"/>
-        <Loaded Value="True"/>
       </Unit73>
       <Unit74>
         <Filename Value="../../Dropbox/Documentos/color_register/src/db_field_list_class.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="49" Y="10"/>
         <UsageCount Value="4"/>
       </Unit74>
       <Unit75>
         <Filename Value="/lazarus/components/zeosdb/src/dbc/ZDbcIntfs.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="220"/>
         <CursorPos X="14" Y="228"/>
@@ -551,12 +605,14 @@
       </Unit75>
       <Unit76>
         <Filename Value="/lazarus/components/zeosdb/src/component/ZConnection.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="67"/>
         <UsageCount Value="4"/>
       </Unit76>
       <Unit77>
         <Filename Value="/lazarus/components/zeosdb/src/component/ZAbstractConnection.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="840"/>
         <CursorPos X="32" Y="825"/>
@@ -564,6 +620,7 @@
       </Unit77>
       <Unit78>
         <Filename Value="/lazarus/fpc/2.6.4/source/rtl/inc/wstringh.inc"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="21"/>
         <CursorPos X="11" Y="29"/>
@@ -571,6 +628,7 @@
       </Unit78>
       <Unit79>
         <Filename Value="/lazarus/components/zeosdb/src/core/ZURL.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="59"/>
         <CursorPos X="3" Y="68"/>
@@ -578,6 +636,7 @@
       </Unit79>
       <Unit80>
         <Filename Value="/lazarus/components/zeosdb/src/core/ZCollections.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="499"/>
         <CursorPos Y="509"/>
@@ -586,6 +645,7 @@
       <Unit81>
         <Filename Value="/lazarus/fpc/2.6.4/source/packages/fcl-base/src/custapp.pp"/>
         <UnitName Value="CustApp"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
         <CursorPos X="15" Y="56"/>
@@ -593,12 +653,14 @@
       </Unit81>
       <Unit82>
         <Filename Value="../teste/teste.lpi"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <UsageCount Value="4"/>
         <DefaultSyntaxHighlighter Value="XML"/>
       </Unit82>
       <Unit83>
         <Filename Value="../teste/teste.lpr"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="3"/>
         <CursorPos X="23" Y="15"/>
@@ -607,6 +669,7 @@
       <Unit84>
         <Filename Value="/lazarus/lcl/interfaces/win32/interfaces.pp"/>
         <UnitName Value="Interfaces"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="27"/>
         <UsageCount Value="4"/>
@@ -614,6 +677,7 @@
       <Unit85>
         <Filename Value="/lazarus/lcl/forms.pp"/>
         <UnitName Value="Forms"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="2058"/>
         <CursorPos X="39" Y="2065"/>
@@ -621,6 +685,7 @@
       </Unit85>
       <Unit86>
         <Filename Value="/lazarus/components/zeosdb/src/core/ZClasses.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="103"/>
         <CursorPos X="11" Y="111"/>
@@ -628,6 +693,7 @@
       </Unit86>
       <Unit87>
         <Filename Value="/lazarus/components/zeosdb/src/dbc/ZDbcPostgreSql.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="771"/>
         <CursorPos Y="779"/>
@@ -635,6 +701,7 @@
       </Unit87>
       <Unit88>
         <Filename Value="/lazarus/components/zeosdb/src/dbc/ZDbcConnection.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="786"/>
         <CursorPos Y="799"/>
@@ -642,6 +709,7 @@
       </Unit88>
       <Unit89>
         <Filename Value="/lazarus/components/zeosdb/src/dbc/ZDbcPostgreSqlStatement.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="296"/>
         <CursorPos Y="303"/>
@@ -649,6 +717,7 @@
       </Unit89>
       <Unit90>
         <Filename Value="/lazarus/components/zeosdb/src/plain/ZPlainPostgreSqlDriver.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1188"/>
         <CursorPos Y="1198"/>
@@ -656,6 +725,7 @@
       </Unit90>
       <Unit91>
         <Filename Value="/lazarus/components/zeosdb/src/dbc/ZDbcPostgreSqlUtils.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="712"/>
         <CursorPos Y="719"/>
@@ -663,6 +733,7 @@
       </Unit91>
       <Unit92>
         <Filename Value="/lazarus/components/zeosdb/src/dbc/ZDbcResultSet.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1238"/>
         <CursorPos Y="1246"/>
@@ -670,6 +741,7 @@
       </Unit92>
       <Unit93>
         <Filename Value="/lazarus/components/zeosdb/src/dbc/ZDbcASA.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="118"/>
         <CursorPos X="22" Y="126"/>
@@ -677,6 +749,7 @@
       </Unit93>
       <Unit94>
         <Filename Value="/lazarus/fpc/2.6.4/source/rtl/objpas/classes/classesh.inc"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="446"/>
         <CursorPos X="3" Y="454"/>
@@ -684,6 +757,7 @@
       </Unit94>
       <Unit95>
         <Filename Value="../../Lazarus/zeosdbo/src/dbc/ZDbcPostgreSqlUtils.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="707"/>
         <CursorPos X="40" Y="718"/>
@@ -691,6 +765,7 @@
       </Unit95>
       <Unit96>
         <Filename Value="../../Lazarus/zeosdbo/src/dbc/ZDbcIntfs.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="502"/>
         <CursorPos X="26" Y="512"/>
@@ -698,6 +773,7 @@
       </Unit96>
       <Unit97>
         <Filename Value="/lazarus/components/zeosdb/src/core/ZSysUtils.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="696"/>
         <CursorPos Y="708"/>
@@ -705,6 +781,7 @@
       </Unit97>
       <Unit98>
         <Filename Value="/lazarus/components/zeosdb/src/dbc/ZDbcStatement.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="426"/>
         <CursorPos Y="438"/>
@@ -712,6 +789,7 @@
       </Unit98>
       <Unit99>
         <Filename Value="/lazarus/components/zeosdb/src/plain/ZPlainDriver.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="135"/>
         <CursorPos Y="145"/>
@@ -719,6 +797,7 @@
       </Unit99>
       <Unit100>
         <Filename Value="../Lazarus/zeosdbo/src/plain/ZPlainLoader.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="219"/>
         <CursorPos Y="240"/>
@@ -727,6 +806,7 @@
       </Unit100>
       <Unit101>
         <Filename Value="src/color_register_view_int.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="6"/>
         <CursorPos X="3" Y="14"/>
@@ -734,6 +814,7 @@
       </Unit101>
       <Unit102>
         <Filename Value="../../../../lazarus/components/zeosdb/src/dbc/ZDbcResultSet.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1674"/>
         <CursorPos Y="1686"/>
@@ -742,6 +823,7 @@
       </Unit102>
       <Unit103>
         <Filename Value="../../../../lazarus/components/zeosdb/src/dbc/ZDbcPostgreSqlResultSet.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="424"/>
         <CursorPos Y="439"/>
@@ -750,6 +832,7 @@
       </Unit103>
       <Unit104>
         <Filename Value="../../../../lazarus/components/zeosdb/src/dbc/ZDbcConnection.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="758"/>
         <CursorPos Y="770"/>
@@ -758,6 +841,7 @@
       </Unit104>
       <Unit105>
         <Filename Value="../../../../lazarus/components/zeosdb/src/dbc/ZDbcPostgreSqlStatement.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="389"/>
         <CursorPos Y="401"/>
@@ -766,6 +850,7 @@
       </Unit105>
       <Unit106>
         <Filename Value="../../../../lazarus/components/zeosdb/src/plain/ZPlainPostgreSqlDriver.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1044"/>
         <CursorPos Y="1056"/>
@@ -774,6 +859,7 @@
       </Unit106>
       <Unit107>
         <Filename Value="../../../../lazarus/components/zeosdb/src/dbc/ZDbcIntfs.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1188"/>
         <CursorPos Y="1199"/>
@@ -782,6 +868,7 @@
       </Unit107>
       <Unit108>
         <Filename Value="../../../../lazarus/components/zeosdb/src/core/ZCollections.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="497"/>
         <CursorPos Y="509"/>
@@ -790,6 +877,7 @@
       </Unit108>
       <Unit109>
         <Filename Value="../../../../lazarus/components/zeosdb/src/dbc/ZDbcPostgreSql.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="878"/>
         <CursorPos Y="887"/>
@@ -797,59 +885,6 @@
         <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit109>
     </Units>
-    <JumpHistory Count="13" HistoryIndex="12">
-      <Position1>
-        <Filename Value="src/color_insert_class.pas"/>
-        <Caret Line="70" TopLine="54"/>
-      </Position1>
-      <Position2>
-        <Filename Value="src/color_class.pas"/>
-        <Caret Line="29" TopLine="19"/>
-      </Position2>
-      <Position3>
-        <Filename Value="src/color_class.pas"/>
-        <Caret Line="30" TopLine="19"/>
-      </Position3>
-      <Position4>
-        <Filename Value="src/color_class.pas"/>
-        <Caret Line="31" TopLine="19"/>
-      </Position4>
-      <Position5>
-        <Filename Value="src/color_insert_class.pas"/>
-        <Caret Line="69" TopLine="54"/>
-      </Position5>
-      <Position6>
-        <Filename Value="src/color_insert_class.pas"/>
-        <Caret Line="63" Column="9" TopLine="57"/>
-      </Position6>
-      <Position7>
-        <Filename Value="src/color_alter_class.pas"/>
-        <Caret Line="117" Column="34" TopLine="114"/>
-      </Position7>
-      <Position8>
-        <Filename Value="src/color_alter_class.pas"/>
-        <Caret Line="114" TopLine="107"/>
-      </Position8>
-      <Position9>
-        <Filename Value="src/color_alter_class.pas"/>
-        <Caret Line="119" TopLine="107"/>
-      </Position9>
-      <Position10>
-        <Filename Value="src/color_class.pas"/>
-        <Caret Line="29" TopLine="19"/>
-      </Position10>
-      <Position11>
-        <Filename Value="src/color_class.pas"/>
-        <Caret Line="30" TopLine="19"/>
-      </Position11>
-      <Position12>
-        <Filename Value="src/color_class.pas"/>
-        <Caret Line="31" TopLine="19"/>
-      </Position12>
-      <Position13>
-        <Filename Value="src/color_alter_class.pas"/>
-        <Caret Line="118" TopLine="107"/>
-      </Position13>
-    </JumpHistory>
+    <JumpHistory HistoryIndex="-1"/>
   </ProjectSession>
 </CONFIG>
