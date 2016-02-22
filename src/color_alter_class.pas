@@ -32,14 +32,18 @@ begin
 end;
 
 function TColorAlter.Execute(const AnId: Integer; const AColor: IColor): IResult;
+var
+  AQuery: IZResultSet;
 begin
   try
-    if (ZDbConnection.CreateStatement.ExecuteQuery(
+    AQuery:=ZDbConnection.CreateStatement.ExecuteQuery(
       Format(
         'SELECT count(*) FROM color WHERE id = %d;',
         [AnId]
       )
-    ).GetInt(0) > 0) then
+    );
+    AQuery.First;
+    if (AQuery.GetInt(1) > 0) then
     begin
       with ZDbConnection.CreateStatement.ExecuteQuery(
         Format(
@@ -57,6 +61,7 @@ begin
             [GetStringByName('name'),AColor.Name]
           )
         );
+        ZDbConnection.Commit;
       end;
     end else
       Result:=TResult.Create(
@@ -88,20 +93,17 @@ function TColorAlter.Execute(const AName: string; const AColor: IColor
   ): IResult;
 var
   Colors: string;
-  CollumnQuantity: Integer;
+  AQuery: IZResultSet;
 begin
   try
-    with ZDbConnection.CreateStatement.ExecuteQuery(
+    AQuery:=ZDbConnection.CreateStatement.ExecuteQuery(
       Format(
         'SELECT count(*) FROM color WHERE name LIKE %s',
         [QuotedStr('%' + AName + '%')]
       )
-    ) do
-    begin
-      First;
-      CollumnQuantity:=GetInt(1);
-    end;
-    case CollumnQuantity of
+    );
+    AQuery.First;
+    case AQuery.GetInt(1) of
       0:
         Result:=TResult.Create(
           rsError,
@@ -111,20 +113,32 @@ begin
           )
         );
       1: begin
-        ZDbConnection.CreateStatement.ExecuteQuery(
+        AQuery:=ZDbConnection.CreateStatement.ExecuteQuery(
           Format(
-            'UPDATE color SET name = %s WHERE name LIKE %s',
-            [QuotedStr(AColor.Name), QuotedStr('%' + AName + '%')]
+            'UPDATE color SET name = %s WHERE name LIKE %s RETURNING' + #13#10 +
+            '(SELECT name FROM color WHERE name LIKE %s)',
+            [QuotedStr(AColor.Name), QuotedStr('%' + AName + '%'),
+             QuotedStr('%' + AName + '%')]
           )
         );
+        AQuery.First;
+        if (AQuery.GetString(1) <> AName) then
+          Result:=TResult.Create(
+            rsOk,
+            Format(
+              'The color %s (%s) was successfully changed to %s!',
+              [AQuery.GetString(1), AName, AColor.Name]
+            )
+          )
+        else
+          Result:=TResult.Create(
+            rsOk,
+            Format(
+              'The color %s was successfully changed to %s!',
+              [AName, AColor.Name]
+            )
+          );
         ZDbConnection.Commit;
-        Result:=TResult.Create(
-          rsOk,
-          Format(
-            'The color %s wass successfully changed to %s!',
-            [AName, AColor.Name]
-          )
-        );
       end
       else begin
         Colors:='';
