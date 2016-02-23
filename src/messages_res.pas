@@ -26,11 +26,18 @@ const
   MesColorInsertAlreadyExists: string =
     'Color %s was not inserted because it already exists!';
 
-  MesColorAlterSuccess: string = 'Color %s was successfully altered to %s!';
+  MesColorAlterSuccess: string = 'The color %s was successfully altered to %s!';
   MesColorAlterError: string =
-    'Color %s (id %d) was not altered because ocurred an error related to ' +
+    'Color %s was not altered because ocurred an error related to ' +
     'the database!' + #13#10 +
     'Error message: %s';
+  MesColorAlterNameNotFound: string =
+    'No color that has %s in the name was found!';
+  MesColorAlterMoreThanOneFound: string =
+    'More than a color was found with the %s in their name, they are:';
+  MesColorAlterIdNotFound: string =
+    'The color with the Id %d wasn''t found!' + #13#10 +
+    'Maybe you typed it wrong, check if it''s the case.';
 
   MesColorListingSuccessWithColors: string =
     'Hi-ho me bucko, all th'' colors were listed successfully!' + #13#10 +
