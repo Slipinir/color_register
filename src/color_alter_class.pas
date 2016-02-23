@@ -127,33 +127,31 @@ begin
         Colors:='';
         Colors:=
           Format(
-            MesColorAlterMoreThanOneFound,
+            MesColorMoreThanOneFound,
             [AName]
           ) + #13#10 +
           'Id Name';
-        with ZDbConnection.CreateStatement.ExecuteQuery(
+        AQuery:=ZDbConnection.CreateStatement.ExecuteQuery(
           Format(
             'SELECT id, name FROM color WHERE name LIKE %s',
             [QuotedStr('%' + AName + '%')]
           )
-        ) do
-        begin
-          First;
-          repeat
-            Colors:=Colors+#13#10+
-              Format(
-                '%2d %s',
-                [GetIntByName('id'), GetStringByName('name')]
-              );
-            Next;
-          until (IsAfterLast);
+        );
+        AQuery.First;
+        repeat
+          Colors:=Colors + #13#10 +
+            Format(
+              '%2d %s',
+              [AQuery.GetIntByName('id'), AQuery.GetStringByName('name')]
+            );
+          AQuery.Next;
+        until (AQuery.IsAfterLast);
         end;
         Result:=TResult.Create(
           rsError,
           Colors
         );
       end;
-    end;
   except
     on AnException: Exception do
       Result:=TResult.Create(
