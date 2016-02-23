@@ -5,8 +5,7 @@ unit color_listing_class;
 interface
 
 uses
-  Classes, SysUtils, color_listing_int, color_model_list_int, result_int,
-  color_model_int;
+  Classes, SysUtils, color_listing_int, color_model_list_int, result_int;
 
 type
 

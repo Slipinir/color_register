@@ -45,22 +45,14 @@ begin
   Writeln(
     Format(
       '%2s %2s - %s',
-      [
-        '#',
-        'Id',
-        'Name'
-      ]
+      ['#', 'Id', 'Name']
     )
   );
   for I:=0 to AColorModelList.Count-1 do
     Writeln(
       Format(
         '%2d %2d - %s',
-        [
-          I+1,
-          AColorModelList.Get(I).Id,
-          AColorModelList.Get(I).Color.Name
-        ]
+        [I+1, AColorModelList.Get(I).Id, AColorModelList.Get(I).Color.Name]
       )
     );
 end;
@@ -82,8 +74,6 @@ begin
     AColorModelList:=TColorModelList.Create;
     Writeln('Color list options:');
     Writeln('1-All;');
-    Writeln('2-Per Id;');
-    Writeln('3-Per multiple Ids;');
     Writeln('0-Cancel.');
     Writeln('What is your chosen option?');
     AnOption:=GetOption;
