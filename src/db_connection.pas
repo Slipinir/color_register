@@ -23,7 +23,7 @@ initialization
     AnUrl:=TZURL.Create(
       'zdbc:postgresql-9://localhost:5432/color_register?' +
       'username=color_register_user;password=masterkey;AutoEncodeStrings=;' +
-      'LibLocation=./libpq.dll',
+      'LibLocation=./db/libpq32.dll',
       'localhost',
       5432,
       'color_register',
