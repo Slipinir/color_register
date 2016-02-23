@@ -31,4 +31,4 @@ Cons:
 - Since it uses interfaces, has practically a class for each interface, except for IView, that is implemented by view classes;
 - Has more writed coding lines, since it doesn't uses components.
  
-Thanks to Marcos Douglas, owner and writer of Object Pascal Programming blog (http://objectpascalprogramming.com/) and a coworker of the company where I work - the responsible for showing me the referenced blog.
+Thanks to Marcos Douglas, owner and writer of Object Pascal Programming blog (http://objectpascalprogramming.com/) and Adriano, a coworker of the company where I work and responsible for showing me the already cited blog.
