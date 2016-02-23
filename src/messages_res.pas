@@ -33,7 +33,7 @@ const
     'Error message: %s';
   MesColorAlterNameNotFound: string =
     'No color that has %s in the name was found!';
-  MesColorAlterMoreThanOneFound: string =
+  MesColorMoreThanOneFound: string =
     'More than a color was found with the %s in their name, they are:';
   MesColorAlterIdNotFound: string =
     'The color with the Id %d wasn''t found!' + #13#10 +
