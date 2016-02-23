@@ -26,7 +26,7 @@ implementation
 
 uses
   color_insert_view_class, messages_res, color_listing_view_class,
-  color_alter_view_class;
+  color_alter_view_class, color_delete_view_class;
 
 { TColorMenuView }
 
@@ -36,7 +36,7 @@ begin
     opInsert: Result:=TColorInsertView.New;
     opList: Result:=TColorListingView.New;
     opAlter: Result:=TColorAlterView.New;
-    //opDelete: TColorDeleteView.New;
+    opDelete: Result:=TColorDeleteView.New;
   end;
 end;
 
