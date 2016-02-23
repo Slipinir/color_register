@@ -56,21 +56,16 @@ begin
         First;
         Result:=TResult.Create(
           rsOk,
-          Format(
-            MesColorAlterSuccess,
-            [GetStringByName('name'),AColor.Name]
-          )
+          MesColorAlterSuccess,
+          [GetStringByName('name'),AColor.Name]
         );
         ZDbConnection.Commit;
       end;
     end else
       Result:=TResult.Create(
         rsError,
-        Format(
-          'The color with the Id %d wasn''t found!' + #13#10 +
-          'Maybe you typed it wrong, check if it''s the case.',
-          [AnId]
-        )
+        MesColorAlterIdNotFound,
+        [AnId]
       );
   except
     on AnException: Exception do
@@ -78,11 +73,7 @@ begin
         rsError,
         Format(
           MesColorAlterError,
-          [
-            AColor.Name,
-            AnId,
-            AnException.Message
-          ]
+          [AColor.Name, AnException.Message]
         )
       );
   end;
@@ -107,10 +98,8 @@ begin
       0:
         Result:=TResult.Create(
           rsError,
-          Format(
-            'No color that has %s in the name was found!',
-            [AName]
-          )
+          MesColorAlterNameNotFound,
+          [AName]
         );
       1: begin
         AQuery:=ZDbConnection.CreateStatement.ExecuteQuery(
@@ -125,18 +114,14 @@ begin
         if (AQuery.GetString(1) <> AName) then
           Result:=TResult.Create(
             rsOk,
-            Format(
-              'The color %s (%s) was successfully changed to %s!',
-              [AQuery.GetString(1), AName, AColor.Name]
-            )
+            MesColorAlterSuccess,
+            [AQuery.GetString(1), AColor.Name]
           )
         else
           Result:=TResult.Create(
             rsOk,
-            Format(
-              'The color %s was successfully changed to %s!',
-              [AName, AColor.Name]
-            )
+            MesColorAlterSuccess,
+            [AName, AColor.Name]
           );
         ZDbConnection.Commit;
       end
@@ -144,7 +129,7 @@ begin
         Colors:='';
         Colors:=
           Format(
-            'More than a color was found with the %s in their name, they are:',
+            MesColorAlterMoreThanOneFound,
             [AName]
           ) + #13#10 +
           'Id Name';
@@ -175,11 +160,8 @@ begin
     on AnException: Exception do
       Result:=TResult.Create(
         rsError,
-        Format(
-          'An error ocurred trying to alter a color!' + #13#10 +
-          'Error message: %s',
-          [AnException.Message]
-        )
+        MesColorAlterError,
+        [AColor.Name, AnException.Message]
       );
   end;
 end;
