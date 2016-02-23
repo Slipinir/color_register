@@ -45,22 +45,20 @@ begin
     AQuery.First;
     if (AQuery.GetInt(1) > 0) then
     begin
-      with ZDbConnection.CreateStatement.ExecuteQuery(
+      AQuery:=ZDbConnection.CreateStatement.ExecuteQuery(
         Format(
           'UPDATE color SET name = %s WHERE id = %d RETURNING ' +
           '(SELECT name FROM color WHERE id = %d);',
           [QuotedStr(AColor.Name), AnId, AnId]
         )
-      ) do
-      begin
-        First;
-        Result:=TResult.Create(
-          rsOk,
-          MesColorAlterSuccess,
-          [GetStringByName('name'),AColor.Name]
-        );
-        ZDbConnection.Commit;
-      end;
+      );
+      AQuery.First;
+      Result:=TResult.Create(
+        rsOk,
+        MesColorAlterSuccess,
+        [AQuery.GetStringByName('name'), AColor.Name]
+      );
+      ZDbConnection.Commit;
     end else
       Result:=TResult.Create(
         rsError,
