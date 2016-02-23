@@ -16,6 +16,8 @@ type
     FStatus: TResultStatus;
     FMessage: string;
   public
+    constructor Create(const AStatus: TResultStatus; const AFormat: string;
+      const AParameterList: array of const);
     constructor Create(const AStatus: TResultStatus; const AMessage: string);
     function Status: TResultStatus;
     function Message: string;
@@ -24,6 +26,13 @@ type
 implementation
 
 { TResult }
+
+constructor TResult.Create(const AStatus: TResultStatus; const AFormat: string;
+  const AParameterList: array of const);
+begin
+  FStatus:=AStatus;
+  FMessage:=Format(AFormat, AParameterList);
+end;
 
 constructor TResult.Create(const AStatus: TResultStatus; const AMessage: string);
 begin
